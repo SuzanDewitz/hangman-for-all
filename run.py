@@ -1,4 +1,7 @@
-with open('filename.txt', 'r') as f:
-    fileText = f.read()
+import random
+from words import words
 
-filedata = fileText.split('\n')
+
+def get_words():
+   word = random.choice(word) 
+   return word.upper()

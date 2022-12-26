@@ -1,4 +1,5 @@
-word = [
+words = 
+[
 'cannon',
 'drawer',
 'current',
