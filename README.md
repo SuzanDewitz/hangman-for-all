@@ -1,8 +1,10 @@
 Hangman-For-All
 
 # credited 
-*  free word - https://www.randomlists.com/data/words.json 
-* words.py - A list of randomly generated words to be used to select a word to play, taken from (https://www.randomlists.com/random-words).
+* Code Institute for the mock terminal for the deploy to a live site.
+* words.py - A list of randomly generated free word - https://www.randomlists.com/data/words.json 
+* Notepad ++ Column eaditer
+* Word Document with python https://youtu.be/WK-0VQsEfLA 
 
 # Technologies Used
 * Languages
