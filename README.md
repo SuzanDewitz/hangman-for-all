@@ -1,6 +1,15 @@
+Hangman-For-All
 
 # credited 
 *  free word - https://www.randomlists.com/data/words.json 
+* words.py - A list of randomly generated words to be used to select a word to play, taken from (https://www.randomlists.com/random-words).
+
+# Technologies Used
+* Languages
+* Python.
+* Libraries
+* random to select a random word.  word.py
+
 
 
 
