@@ -35,15 +35,15 @@ word = [
 'paper'
 'hard '
 'reach'
-'imper'fect
-'sea  '
-'glib '
+'imperfect'
+'sea'
+'glib'
 'match'
-'waste'ful
-'helli'sh
-'grubb'y
-'secre'tary
-'coil '
+'wasteful'
+'hellish'
+'grubby'
+'secretary'
+'coil'
 'aloof'
 'breath'
 'hanging'

@@ -7,7 +7,7 @@
  * Validation
  * Testing
  * Project creation and deployment
- * Creadits
+ * Credits
  <br>
  <br>
  <br>
