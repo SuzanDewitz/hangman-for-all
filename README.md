@@ -29,7 +29,9 @@ Hangman-For-All
 * Code Institute for the mock terminal for the deploy to a live site.
 * words.py - A list of randomly generated from free word - https://www.randomlists.com/data/words.json 
 * Notepad ++ Column editor 
+* For Templates free lucidchart https://lucid.app/
 * Word Document with python https://youtu.be/WK-0VQsEfLA 
+  https://lucid.app/lucidchart/7af783b3-f411-40d5-9e8a-e2e60a4977a6/edit?invitationId=inv_84c2610d-ede7-44d3-8c53-350bb3ca8d4f
 
 <br>
 
