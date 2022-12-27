@@ -1,16 +1,70 @@
-Hangman-For-All
+# contents
+ * How to play
+ * Design
+ * Features and user experience 
+ * Tecnologies used
+ * Fixed and unfixed bugs
+ * Validation
+ * Testing
+ * Project creation and deployment
+ * Creadits
+ <br>
+ <br>
+ <br>
 
-# credited 
-* Code Institute for the mock terminal for the deploy to a live site.
-* words.py - A list of randomly generated free word - https://www.randomlists.com/data/words.json 
-* Notepad ++ Column eaditer
-* Word Document with python https://youtu.be/WK-0VQsEfLA 
+ How to play
+
+
+
+
+Hangman-For-All
 
 # Technologies Used
 * Languages
 * Python.
 * Libraries
 * random to select a random word.  word.py
+
+# credited 
+* Code Institute for the mock terminal for the deploy to a live site.
+* words.py - A list of randomly generated from free word - https://www.randomlists.com/data/words.json 
+* Notepad ++ Column editor 
+* Word Document with python https://youtu.be/WK-0VQsEfLA 
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+
+
+
+
 
 
 
