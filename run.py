@@ -1,6 +1,7 @@
 import random
-# For selecting a random word
 from words import words
+from hangman_lives import hangman_lives
+from time import sleep
 import string
 
 def get_valid_word(words):
