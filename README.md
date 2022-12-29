@@ -27,7 +27,7 @@ Hangman-For-All
 
 # credited 
 * Code Institute for the mock terminal for the deploy to a live site.
-* https://realpython.com/python-sleep/
+* How to add sleep for python from https://realpython.com/python-sleep/
 * words.py - A list of randomly generated from free word - https://www.randomlists.com/data/words.json 
 * Notepad ++ Column editor 
 * For Templates free lucidchart https://lucid.app/
