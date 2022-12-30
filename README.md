@@ -1,7 +1,9 @@
 # contents
+* Home
  * How to play
  * Design
  * Features and user experience 
+ 
  * Tecnologies used
  * Fixed and unfixed bugs
  * Validation
@@ -18,7 +20,17 @@
 
 
 Hangman-For-All
-
+# Home
+* about Hangman-For-All
+  * This implementation generates a random word from a list of words, 
+and the player has to guess the letters of the word one by one.
+ The game ends either when the player has successfully guessed the word, 
+ or when the player has run out of guesses. In each turn of the game,
+ the current state of the word is displayed, with underscores representing the letters that have not been guessed yet.
+ The player can then enter a letter to guess, and the game will update 
+the state of the word and display the corresponding image depending on whether the guess was correct or not.
+# Features and user experience 
+ * 
 # Technologies Used
 * Languages
 * Python.
