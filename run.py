@@ -21,7 +21,19 @@ guesses = []
 max_guesses = 6
 current_guesses = 0
 
-# List of images for different lives stages of the hangman
+print(Fore.BLUE + """
+ 
+  _   _                                               _____                 _    _     _     
+ | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __       |  ___|__  _ __       / \  | |   | |    
+ | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ _____| |_ / _ \| '__|____ / _ \ | |   | |    
+ |  _  | (_| | | | | (_| | | | | | | (_| | | | |_____|  _| (_) | | |_____/ ___ \| |___| |___ 
+ |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|     |_|  \___/|_|      /_/   \_\_____|_____|
+                    |___/                                                                    
+
+   ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  \n
+""")
+
+#display the Hangman image based on the number of lives remaining
 images = [Fore.RED +
     """
     +---+
@@ -91,10 +103,10 @@ while True:
 
     # Check if the player has won or lost
     if current_word == word:
-        print(Fore.YELLOW + "Congratulations! You won!")
+        print(Fore.YELLOW + "Congratulations! The word was {word}.You won!")
         break
     elif current_guesses >= max_guesses:
-        print(Fore.RED + "Sorry, you lost. The word was:", word)
+        print(Fore.RED + "Sorry, You lost! The word was:", word)
         break
 
     # Get the player's guess
