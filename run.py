@@ -96,7 +96,7 @@ def welcome_page():
 
 print(Fore.BLUE + 'Welcome to Hangman For All')
 # Get the player's name
-player_name = input(Fore.GREEN + "What is your name? ")
+player_name = input(Fore.GREEN + "What is your name?\n")
 # Print a message to the player
 print(Fore.BLUE + f"Hello, {player_name}! Let's play Hangman For All!")
 print(Fore.BLUE + f"Good Luck on Your Game!")
@@ -125,7 +125,7 @@ while True:
     time.sleep(1)
 
     # Get the player's guess
-    guess = input("Guess a letter: ")
+    guess = input("Guess a letter:\n")
     guesses.append(guess)
     current_guesses += 1
 
