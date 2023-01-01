@@ -1,6 +1,6 @@
 import random
 from words import words
-from time import sleep
+import time
 import string
 
 # For using coloured text in the terminal
@@ -9,6 +9,7 @@ from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
 def get_valid_word(words):
+    word = random.choice(words)
     word = random.choice(words)  # randomly chooses something from the list
     while '-' in word or ' ' in word:
         word = random.choice(words)
@@ -20,6 +21,12 @@ word = random.choice(words)
 guesses = []
 max_guesses = 6
 current_guesses = 0
+
+def hangman_logo():
+    """
+    The word 'Hangman' is spelled out
+    show the letters in blue at the beginning of the game.
+    """
 
 print(Fore.BLUE + """
  
@@ -81,12 +88,18 @@ images = [Fore.RED +
 
 # Display the initial state of the game
 print(images[0])
+def welcome_page():
+    """
+   Welcome user to the game
+   Ask the user name
+   """ 
 
 print(Fore.BLUE + 'Welcome to Hangman For All')
 # Get the player's name
 player_name = input(Fore.GREEN + "What is your name? ")
 # Print a message to the player
 print(Fore.BLUE + f"Hello, {player_name}! Let's play Hangman For All!")
+print(Fore.BLUE + f"Good Luck on Your Game!")
 print(f"You have {max_guesses} guesses to guess the word.")
 
 
@@ -103,11 +116,13 @@ while True:
 
     # Check if the player has won or lost
     if current_word == word:
-        print(Fore.YELLOW + "Congratulations! The word was {word}.You won!")
+        print(Fore.YELLOW + "Congratulations! You won!")
         break
     elif current_guesses >= max_guesses:
         print(Fore.RED + "Sorry, You lost! The word was:", word)
         break
+      # Pause the game for 1 second
+    time.sleep(1)
 
     # Get the player's guess
     guess = input("Guess a letter: ")
@@ -116,17 +131,18 @@ while True:
 
     # Display the current image
     print(images[current_guesses])
-#Function to play the game again
-
-def play_again():
-  play_again_answer = input('  Press any key to play again:\n  ').lower()
-  main()
 
 
-"""
-Main function to play the game
-"""
-def main():
-  main_screen()
-  
-main()
+    
+    
+
+# Play the game
+while True:
+    hangman()
+
+    # Ask the player if they want to play again
+   
+    print(play_again)("\nDo you want to play again? (Y/N) ")
+    if play_again.lower() != "y":
+        break
+
