@@ -18,7 +18,7 @@ word = random.choice(words)
 
 # Initialize variables
 guesses = []
-max_guesses = 8
+max_guesses = 6
 current_guesses = 0
 
 # List of images for different lives stages of the hangman
