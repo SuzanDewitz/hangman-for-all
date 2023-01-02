@@ -92,6 +92,7 @@ def welcome_page():
     """
    Welcome user to the game
    Ask the user name
+   wish good luck for user
    """ 
 
 print(Fore.BLUE + 'Welcome to Hangman For All')
@@ -132,17 +133,13 @@ while True:
     # Display the current image
     print(images[current_guesses])
 
-
-    
-    
-
 # Play the game
-while True:
-    hangman()
 
-    # Ask the player if they want to play again
-   
-    print(play_again)("\nDo you want to play again? (Y/N) ")
-    if play_again.lower() != "y":
+
+while True:
+    if input("Do you want to play again? Any key = quit, y = play again").lower() == "y":
+
+        print(Fore.GREEN + "Thanks for playing... \n")
         break
+
 
