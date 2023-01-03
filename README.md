@@ -29,6 +29,12 @@ and the player has to guess the letters of the word one by one.
  the current state of the word is displayed, with underscores representing the letters that have not been guessed yet.
  The player can then enter a letter to guess, and the game will update 
 the state of the word and display the corresponding image depending on whether the guess was correct or not.
+
+
+
+# Design
+![amiresposive](./assets/hangman-hangman%20flow%20chart.jpg)
+
 # Features and user experience 
  * 
 # Technologies Used
