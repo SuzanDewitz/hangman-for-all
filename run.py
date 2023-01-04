@@ -102,8 +102,8 @@ print(Fore.WHITE + 'Welcome to Hangman For All')
 # Get the player's name
 player_name = input(Fore.WHITE + "What is your name?\n")
 # Print a message to the player
-print(Fore.BLUE + f"Hello, {player_name}! Let's play Hangman For All!")
-print(Fore.BLUE + f"Good Luck on Your Game!")
+print(Fore.WHITE + f"Hello, {player_name}! Let's play Hangman For All!")
+print(Fore.WHITE + f"Good Luck on Your Game!")
 print(f"You have {max_guesses} guesses to guess the word.")
 
 
