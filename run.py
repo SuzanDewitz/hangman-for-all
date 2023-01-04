@@ -30,12 +30,15 @@ def hangman_logo():
 
 print(Fore.BLUE + """
  
-  _   _                                               _____                 _    _     _     
- | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __       |  ___|__  _ __       / \  | |   | |    
- | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ _____| |_ / _ \| '__|____ / _ \ | |   | |    
- |  _  | (_| | | | | (_| | | | | | | (_| | | | |_____|  _| (_) | | |_____/ ___ \| |___| |___ 
- |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|     |_|  \___/|_|      /_/   \_\_____|_____|
-                    |___/                                                                    
+  
+           
+  _   _                                         
+ | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+ | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+ |  _  | (_| | | | | (_| | | | | | | (_| | | | |
+ |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    |___/                       
+                                                          
 
    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  \n
 """)
@@ -95,9 +98,9 @@ def welcome_page():
    wish good luck for user
    """ 
 
-print(Fore.BLUE + 'Welcome to Hangman For All')
+print(Fore.WHITE + 'Welcome to Hangman For All')
 # Get the player's name
-player_name = input(Fore.GREEN + "What is your name?\n")
+player_name = input(Fore.WHITE + "What is your name?\n")
 # Print a message to the player
 print(Fore.BLUE + f"Hello, {player_name}! Let's play Hangman For All!")
 print(Fore.BLUE + f"Good Luck on Your Game!")
@@ -142,4 +145,4 @@ while True:
         print(Fore.GREEN + "Thanks for playing... \n")
         break
 
-
+hangman_logo()
