@@ -33,7 +33,7 @@ the state of the word and display the corresponding image depending on whether t
 
 
 # Design
-![amiresposive](./assets/hangman-hangman%20flow%20chart.jpg)
+ ![amiresposive](assets/hangman-hangman%20flow%20chart.jpg)
 
 # Features and user experience 
  * 
