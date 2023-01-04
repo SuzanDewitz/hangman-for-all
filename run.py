@@ -1,7 +1,7 @@
 import random
 from words import words
 import time
-import string
+
 
 # For using coloured text in the terminal
 import colorama
