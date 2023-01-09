@@ -1,4 +1,5 @@
-# contents
+# HANGMAN
+  * 
 * Home
  * How to play
  * Design

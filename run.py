@@ -13,7 +13,6 @@ def hangman_logo():
     The word 'Hangman' is spelled out
     show the letters in blue at the beginning of the game.
     """
-
 print(Fore.BLUE)
 print("""
  
