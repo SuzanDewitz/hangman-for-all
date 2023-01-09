@@ -8,7 +8,27 @@ from colorama import Fore, Style
 
 # Initialize colorama
 init()
+def hangman_logo():
+    """
+    The word 'Hangman' is spelled out
+    show the letters in blue at the beginning of the game.
+    """
 
+print(Fore.BLUE)
+print("""
+ 
+  
+           
+  _   _                                         
+ | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+ | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+ |  _  | (_| | | | | (_| | | | | | | (_| | | | |
+ |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    |___/                       
+                                                          
+   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+""")
+print(Fore.RESET)
 
 def play_game():
     print("'Welcome to Hangman!")
@@ -34,27 +54,7 @@ time.sleep(0.5)
 print("You have 6 lives. Good luck!")
 time.sleep(0.5)
 
-def hangman_logo():
-    """
-    The word 'Hangman' is spelled out
-    show the letters in blue at the beginning of the game.
-    """
-print(Fore.BLUE)
-print("""
- 
-  
-           
-  _   _                                         
- | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __  
- | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
- |  _  | (_| | | | | (_| | | | | | | (_| | | | |
- |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                    |___/                       
-                                                          
-   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
-""")
-print(Fore.RESET)
-
+    
 # ASCII art images for hangman progress
 HANGMAN_ASCII_ART = ['''
   +---+
