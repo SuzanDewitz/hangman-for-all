@@ -1,34 +1,46 @@
 import random
 from words import words
 import time
+from colorama import Style
+
+from colorama import init
+from colorama import Fore, Style
+
+# Initialize colorama
+init()
 
 
-# For using coloured text in the terminal
-import colorama
-from colorama import Fore, Back, Style
-colorama.init(autoreset=True)
+def play_game():
+    print("'Welcome to Hangman!")
+    time.sleep(0.5)
+    
+print('Welcome to the hangman game!')
 
-def get_valid_word(words):
-    word = random.choice(words)
-    word = random.choice(words)  # randomly chooses something from the list
-    while '-' in word or ' ' in word:
-        word = random.choice(words)
-        return word
-# Choose a random word
-word = random.choice(words)
+while True:
+  name = input('What is your name? ')
+  if name.isalpha():
+    break
+  else:
+    print('Please enter a valid name')
+print('Hello,', name)
 
-# Initialize variables
-guesses = []
-max_guesses = 6
-current_guesses = 0
+print(Style.BRIGHT + Fore.WHITE + "The game rules are simple:")
+print("1.you have to guess a word one letter at a time.")
+time.sleep(0.5)
+print("2.If you guess a letter that is in the word, it will be revealed.")
+time.sleep(0.5)
+print("3.If you guess a letter that is not in the word, you lose a life.")
+time.sleep(0.5)
+print("You have 6 lives. Good luck!")
+time.sleep(0.5)
 
 def hangman_logo():
     """
     The word 'Hangman' is spelled out
     show the letters in blue at the beginning of the game.
     """
-
-print(Fore.BLUE + """
+print(Fore.BLUE)
+print("""
  
   
            
@@ -39,110 +51,140 @@ print(Fore.BLUE + """
  |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                     |___/                       
                                                           
-
-   ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  \n
+   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 """)
+print(Fore.RESET)
 
-#display the Hangman image based on the number of lives remaining
-images = [Fore.RED +
-    """
-    +---+
-        |
-        |
-        |
-       ===""",
-    """
-    +---+
-    O   |
-        |
-        |
-       ===""",
-    """
-    +---+
-    O   |
-    |   |
-        |
-       ===""",
-    """
-    +---+
-    O   |
-   /|   |
-        |
-       ===""",
-    """
-    +---+
-    O   |
-   /|\  |
-        |
-       ===""",
-    """
-    +---+
-    O   |
-   /|\  |
-   /    |
-       ===""",
-    """
-    +---+
-    O   |
-   /|\  |
-   / \  |
-       ===""",
-]
+# ASCII art images for hangman progress
+HANGMAN_ASCII_ART = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
 
-# Display the initial state of the game
-print(images[0])
-def welcome_page():
-    """
-   Welcome user to the game
-   Ask the user name
-   wish good luck for user
-   """ 
-
-print(Fore.WHITE + 'Welcome to Hangman For All')
-# Get the player's name
-player_name = input(Fore.WHITE + "What is your name?\n")
-# Print a message to the player
-print(Fore.WHITE + f"Hello, {player_name}! Let's play Hangman For All!")
-print(Fore.WHITE + f"Good Luck on Your Game!")
-print(f"You have {max_guesses} guesses to guess the word.")
-
+# Function to set up the game with a randomly selected word and the number of misses allowed
+def setup_game(words, max_misses):
+  word = random.choice(words)
+  misses_allowed = max_misses
+  return word, misses_allowed
 
 # Main game loop
-while True:
-    # Print the current state of the word
-    current_word = ""
-    for letter in word:
-        if letter in guesses:
-            current_word += letter
-        else:
-            current_word += "_"
-    print(current_word)
+def play_hangman(word, misses_allowed):
+  word = word.upper()
+  word_letters = set(word)
+  alphabet = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+  used_letters = set()
 
-    # Check if the player has won or lost
-    if current_word == word:
-        print(Fore.YELLOW + "Congratulations! You won!")
-        break
-    elif current_guesses >= max_guesses:
-        print(Fore.RED + "Sorry, You lost! The word was:", word)
-        break
-      # Pause the game for 1 second
-    time.sleep(1)
+  word_dict = {}
+  for letter in word:
+    word_dict[letter] = False
 
-    # Get the player's guess
-    guess = input("Guess a letter:\n")
-    guesses.append(guess)
-    current_guesses += 1
+  misses = 0
+  win = False
+  print('\n' + HANGMAN_ASCII_ART[misses])
+  while misses < misses_allowed:
+    print('\nMisses:', misses)
+    print('Used letters:', ' '.join(used_letters))
+    print('Word:', ' '.join([letter if word_dict[letter] else '_' for letter in word]))
 
-    # Display the current image
-    print(images[current_guesses])
+    user_letter = input('\nEnter a letter: ').upper()
+    if user_letter in alphabet - used_letters:
+      used_letters.add(user_letter)
+      if user_letter in word_letters:
+        word_dict[user_letter] = True
+        if all(word_dict.values()):
+          win = True
+          break
+      else:
+        misses += 1
+        print('\n' + HANGMAN_ASCII_ART[misses])
+    else:
+      print('You have already used that letter.')
 
-# Play the game
+  if win:
+    print(f'\n {Fore.GREEN}Congratulations!{Style.RESET_ALL} You won! The word was {word}')
+    print(Fore.GREEN + '''
+  _____
+ /     \\
+| () () |
+ \\  ^  /
+  |||||
+  |||||
+''' + Style.RESET_ALL)
+
+  else:
+    print(f'\n {Fore.RED}You lost!{Style.RESET_ALL} The word was {word}')
+    print(Fore.RED + '''
+  _____
+ /     \\
+|  X X  |
+ \\     /
+  |||||
+  |||||
+''' + Style.RESET_ALL)
+
+    
+
+# Set up the game with a list of words and the maximum number of misses allowed
+
+max_misses = len(HANGMAN_ASCII_ART) - 1
+
+word, misses_allowed = setup_game(words, max_misses)
 
 
-while True:
-    if input("Do you want to play again? Any key = quit, y = play again").lower() == "y":
 
-        print(Fore.GREEN + "Thanks for playing... \n")
-        break
+# Start the game
+play_hangman(word, misses_allowed)
+play_again = input("Do you want to play again? (Y/N)").lower()
+if play_again == 'y':
+    play_game()
+else:
+    print("Thanks for playing! Goodbye.")
 
-hangman_logo()
+def play_game():
+    print("Welcome to Hangman")
