@@ -9,8 +9,7 @@
  <br>
 
   ![amiresposive](assets/hangman%20ami%20responsive.jpg)
-
-* Home
+# Table of Contents
  * How to play
  * Design
  * Features and user experience 
@@ -32,7 +31,6 @@
 
 Hangman-For-All
 # Home
-* about Hangman-For-All
   * The hangman_logo function seems to display the hangman logo in blue, using the colorama library. The play_hangman function is the main 
 game loop, and is responsible for managing the state of the game and updating the player's progress. The setup_game function sets up the
  game by selecting a random word from a list and setting the number of lives allowed, the words variable is defined in words,py file
