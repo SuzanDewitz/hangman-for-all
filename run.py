@@ -59,7 +59,7 @@ time.sleep(0.5)
 
     
 # ASCII art images for hangman progress
-HANGMAN_ASCII_ART = ['''
+HANGMAN_IMAGES = ['''
   +---+
   |   |
       |
@@ -129,7 +129,7 @@ def play_hangman(word, lives_allowed):
 
   lives = 0
   win = False
-  print('\n' + HANGMAN_ASCII_ART[lives])
+  print('\n' + HANGMAN_IMAGES[lives])
   while lives < lives_allowed:
     print('\nLives:', lives)
     print('Used letters:', ' '.join(used_letters))
@@ -145,7 +145,7 @@ def play_hangman(word, lives_allowed):
           break
       else:
         lives += 1
-        print('\n' + HANGMAN_ASCII_ART[lives])
+        print('\n' + HANGMAN_IMAGES[lives])
     else:
       print('You have already used that letter.')
 
@@ -175,7 +175,7 @@ def play_hangman(word, lives_allowed):
 
 # Set up the game with a list of words and the maximum number of lives allowed
 
-max_lives = len(HANGMAN_ASCII_ART) - 1
+max_lives = len(HANGMAN_IMAGES) - 1
 word, lives_allowed = setup_game(words, max_lives)
 
 
