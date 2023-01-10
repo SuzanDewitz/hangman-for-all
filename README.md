@@ -1,5 +1,15 @@
-# HANGMAN
-  * 
+# HANGMAN-For-ALL
+  *HANGMAN for aLL is a Python terminal game, which runs on the Code Institute mock terminal on Heroku.The play_game function prints out some introductory messages
+ to the user and describes the rules of the game. The game is played by guessing letters in a secret word, one at a time. If a letter 
+ is in the word, it is revealed, but if the letter is not in the word, the player loses a life. The player has six lives to guess the 
+ word before the game is over.
+ * Hangman is a great game for spelling and vocabulary knowledge to recognize how letters fit together to form English words as well as know how to spell words so that the user can guess the correct letters.wide range of vocabulary in order to correctly guess the mystery words.
+ <br>
+ <br>
+ <br>
+
+  ![amiresposive](assets/hangman%20ami%20responsive.jpg)
+
 * Home
  * How to play
  * Design
@@ -23,13 +33,10 @@
 Hangman-For-All
 # Home
 * about Hangman-For-All
-  * This implementation generates a random word from a list of words, 
-and the player has to guess the letters of the word one by one.
- The game ends either when the player has successfully guessed the word, 
- or when the player has run out of guesses. In each turn of the game,
- the current state of the word is displayed, with underscores representing the letters that have not been guessed yet.
- The player can then enter a letter to guess, and the game will update 
-the state of the word and display the corresponding image depending on whether the guess was correct or not.
+  * The hangman_logo function seems to display the hangman logo in blue, using the colorama library. The play_hangman function is the main 
+game loop, and is responsible for managing the state of the game and updating the player's progress. The setup_game function sets up the
+ game by selecting a random word from a list and setting the number of lives allowed, the words variable is defined in words,py file
+ provided.
 
 
 
@@ -97,8 +104,7 @@ the state of the word and display the corresponding image depending on whether t
 
 
 
-
-
+###  Why I called hangman for all is my Son is under 10 years I approach him to play so that he can practice his spelling, Vocabulary, and letters. Since we are not native English speakers it helps for general knowledge
 
 
 
