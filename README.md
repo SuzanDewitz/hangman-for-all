@@ -9,36 +9,83 @@
  <br>
 
   ![amiresposive](assets/hangman%20ami%20responsive.jpg)
+ <br>
+ <br>
+ <br>
+
 # Table of Contents
- * How to play
- * Design
- * Features and user experience 
+## Home
+## How to play
+## Design
+## Features and user experience 
  
- * Tecnologies used
- * Fixed and unfixed bugs
- * Validation
- * Testing
- * Project creation and deployment
- * Credits
+## Tecnologies used
+## Fixed and unfixed bugs
+## Validation
+## Testing
+## Project creation and deployment
+## Credits
  <br>
  <br>
  <br>
-
- How to play
-
-
 
 
 Hangman-For-All
 # Home
-  * The hangman_logo function seems to display the hangman logo in blue, using the colorama library. The play_hangman function is the main 
-game loop, and is responsible for managing the state of the game and updating the player's progress. The setup_game function sets up the
+## How to play
+  * This is a Python script that implements a simple game of Hangman, where the player has to guess a word one letter at a time.<br> 
+    If the player guesses a letter that is in the word, it will be revealed. If the player guesses a letter that is not in the word,<br>
+    they lose a life. The player has 6 lives in total.<br>
+
+ * The hangman_logo function displayed in blue, using the Colorama library. The play_hangman function is the main 
+ game loop and is responsible for managing the state of the game and updating the player's progress. The setup_game function sets up the
  game by selecting a random word from a list and setting the number of lives allowed, the words variable is defined in words,py file
- provided.
-
-
+ provided.<br>
+<br>
+<br>
+<br>
+<br>
+ ![amiresposive](assets/hangman%20home%20page.jpg)
 
 # Design
+
+# Features and user experience 
+<br>
+<br>
+<br>
+<br>
+
+## Features 
+<br>
+<br>
+* The features in this specific hangman game include:
+  *  An ASCII art representation of the hangman game that is displayed as the player progresses through the game
+  *  A limited number of lives (6) to guess the word
+  *  The game uses words that have been imported from a separate file "words.py"
+  *  The game checks if the user entered valid name with only Alphabets
+  *  The game also displays the letters that have been used
+  *  The game uses 'colorama' library to change the color of the text, making the game more visually appealing
+  *  The game uses a loop to allow the user to keep playing the game until they win or lose.
+  *  It also uses a function 'play_game()' but it's not implemented in the main part of the game.
+  *  The game randomly selects a word from a list of words, and displays it to the user as a series of underscores (one for each letter in the word), with correctly guessed letters filled in.
+## user experience 
+
+<br>
+<br>
+* In this specific hangman game, the user's goal is to guess the correct word by guessing letters one at a time. 
+* The user will have a certain number of lives (in this case, 6), and for each incorrect letter guessed, they will lose one life.
+* The user must guess the correct word before running out of lives in order to win the game.
+* The user's ultimate goal is to correctly guess the hidden word before the stick figure of the hanging man is fully drawn. 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  ![amiresposive](assets/hangman-hangman%20flow%20chart.jpg)
 
 # Features and user experience 
