@@ -34,7 +34,7 @@ print("""
 print(Fore.RESET)
 
 def play_game():
-    print("'Welcome to Hangman!")
+    print("Welcome to Hangman!")
     time.sleep(0.5)
     
 print('Welcome to the hangman game!')
@@ -135,7 +135,7 @@ def play_hangman(word, lives_allowed):
     print('Used letters:', ' '.join(used_letters))
     print('Word:', ' '.join([letter if word_dict[letter] else '_' for letter in word]))
 
-    user_letter = input('\nEnter a letter: \n').upper()
+    user_letter = input('\nEnter a letter: ').upper()
     if user_letter in alphabet - used_letters:
       used_letters.add(user_letter)
       if user_letter in word_letters:
