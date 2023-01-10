@@ -18,12 +18,16 @@ print("""
  
   
            
-  _   _                                         
- | | | | __ _ _ __   __ _ _ __ ___   __ _ _ __  
- | |_| |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
- |  _  | (_| | | | | (_| | | | | | | (_| | | | |
- |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                    |___/                       
+
+  _    _                                               
+ | |  | |                                              
+ | |__| |  __ _  _ __    __ _  _ __ ___    __ _  _ __  
+ |  __  | / _` || '_ \  / _` || '_ ` _ \  / _` || '_ \ 
+ | |  | || (_| || | | || (_| || | | | | || (_| || | | |
+ |_|  |_| \__,_||_| |_| \__, ||_| |_| |_| \__,_||_| |_|
+                         __/ |                         
+                        |___/                          
+
                                                           
    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 """)
@@ -106,14 +110,14 @@ HANGMAN_ASCII_ART = ['''
       |
 =========''']
 
-# Function to set up the game with a randomly selected word and the number of misses allowed
-def setup_game(words, max_misses):
+# Function to set up the game with a randomly selected word and the number of lives allowed
+def setup_game(words, max_lives):
   word = random.choice(words)
-  misses_allowed = max_misses
-  return word, misses_allowed
+  lives_allowed = max_lives
+  return word, lives_allowed
 
 # Main game loop
-def play_hangman(word, misses_allowed):
+def play_hangman(word, lives_allowed):
   word = word.upper()
   word_letters = set(word)
   alphabet = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
@@ -123,11 +127,11 @@ def play_hangman(word, misses_allowed):
   for letter in word:
     word_dict[letter] = False
 
-  misses = 0
+  lives = 0
   win = False
-  print('\n' + HANGMAN_ASCII_ART[misses])
-  while misses < misses_allowed:
-    print('\nMisses:', misses)
+  print('\n' + HANGMAN_ASCII_ART[lives])
+  while lives < lives_allowed:
+    print('\nLives:', lives)
     print('Used letters:', ' '.join(used_letters))
     print('Word:', ' '.join([letter if word_dict[letter] else '_' for letter in word]))
 
@@ -140,8 +144,8 @@ def play_hangman(word, misses_allowed):
           win = True
           break
       else:
-        misses += 1
-        print('\n' + HANGMAN_ASCII_ART[misses])
+        lives += 1
+        print('\n' + HANGMAN_ASCII_ART[lives])
     else:
       print('You have already used that letter.')
 
@@ -169,21 +173,22 @@ def play_hangman(word, misses_allowed):
 
     
 
-# Set up the game with a list of words and the maximum number of misses allowed
+# Set up the game with a list of words and the maximum number of lives allowed
 
-max_misses = len(HANGMAN_ASCII_ART) - 1
-
-word, misses_allowed = setup_game(words, max_misses)
+max_lives = len(HANGMAN_ASCII_ART) - 1
+word, lives_allowed = setup_game(words, max_lives)
 
 
 
 # Start the game
-play_hangman(word, misses_allowed)
-play_again = input("Do you want to play again? (Y/N)").lower()
-if play_again == 'y':
-    play_game()
-else:
-    print("Thanks for playing! Goodbye.")
+while True:
+    play_hangman(word, lives_allowed)
+    play_again = input("Do you want to play again? (Y/N)").lower()
+    if play_again == 'y':
+        play_game() 
+    else:
+        print("Thanks for playing! Goodbye.")
+
 
 def play_game():
     print("Welcome to Hangman")
