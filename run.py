@@ -40,7 +40,7 @@ def play_game():
 print('Welcome to the hangman game!')
 
 while True:
-  name = input('What is your name? ')
+  name = input('What is your name? \n')
   if name.isalpha():
     break
   else:
@@ -135,7 +135,7 @@ def play_hangman(word, lives_allowed):
     print('Used letters:', ' '.join(used_letters))
     print('Word:', ' '.join([letter if word_dict[letter] else '_' for letter in word]))
 
-    user_letter = input('\nEnter a letter: ').upper()
+    user_letter = input('\nEnter a letter: \n').upper()
     if user_letter in alphabet - used_letters:
       used_letters.add(user_letter)
       if user_letter in word_letters:
@@ -183,7 +183,7 @@ word, lives_allowed = setup_game(words, max_lives)
 # Start the game
 while True:
     play_hangman(word, lives_allowed)
-    play_again = input("Do you want to play again? (Y/N)").lower()
+    play_again = input("Do you want to play again? (Y/N)\n").lower()
     if play_again == 'y':
         play_game() 
     else:
