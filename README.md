@@ -3,7 +3,7 @@
  to the user and describes the rules of the game. The game is played by guessing letters in a secret word, one at a time. If a letter 
  is in the word, it is revealed, but if the letter is not in the word, the player loses a life. The player has six lives to guess the 
  word before the game is over.
- * Hangman is a great game for spelling and vocabulary knowledge to recognize how letters fit together to form English words as well as know how to spell words so that the user can guess the correct letters.wide range of vocabulary in order to correctly guess the mystery words.
+ * Hangman is a great game for spelling and vocabulary knowledge to recognize how letters fit together to form English words as well as know how to spell words so that the user can guess the correct letters and vocabulary in order to correctly find the mystery words.
  <br>
  <br>
  <br>
