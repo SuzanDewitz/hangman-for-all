@@ -125,13 +125,14 @@ def play_hangman(word, lives_allowed):
     word_letters = set(word)
     alphabet = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     used_letters = set()
-
     word_dict = {}
     for letter in word:
         word_dict[letter] = False
 
     lives = 0
     win = False
+    score = 0
+
     print('\n' + HANGMAN_IMAGES[lives])
     while lives < lives_allowed:
         print('\nLives:', lives)
@@ -144,14 +145,19 @@ def play_hangman(word, lives_allowed):
             used_letters.add(user_letter)
             if user_letter in word_letters:
                 word_dict[user_letter] = True
-                if all(word_dict.values()):
+                score += 1
+            else:
+                lives += 1
+                score -= 1 
+        else:      
+            if all(word_dict.values()):
                     win = True
                     break
             else:
                 lives += 1
-                print('\n' + HANGMAN_IMAGES[lives])
-        else:
-            print('You have already used that letter.')
+                score -= 1
+    else:
+      print('You have already used that letter.')
 
     if win:
         print(f'\n {Fore.GREEN}Congratulations!{Style.RESET_ALL} You won!'
