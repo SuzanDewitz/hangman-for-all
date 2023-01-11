@@ -27,9 +27,8 @@ print("""
  |_|  |_| \__,_||_| |_| \__, ||_| |_| |_| \__,_||_| |_|
                          __/ |                         
                         |___/                          
-
-                                                          
-   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+                                                        
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
 """)
 print(Fore.RESET)
 
@@ -157,9 +156,10 @@ def play_hangman(word, lives_allowed):
             print('You have already used that letter.')
 
     if win:
-        print(
-            f'\n {Fore.GREEN}Congratulations!{Style.RESET_ALL} You won! The word was {word}')
+        print(f'\n {Fore.GREEN}Congratulations!{Style.RESET_ALL} You won!'
+              f'The word was {word}')
         print(Fore.GREEN + '''
+
   _____
  /     \\
 | () () |
