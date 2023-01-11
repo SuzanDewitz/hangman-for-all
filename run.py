@@ -135,6 +135,13 @@ def play_hangman(word, lives_allowed):
 
     print('\n' + HANGMAN_IMAGES[lives])
     while lives < lives_allowed:
+        if all(word_dict.values()):
+            win = True
+        else:
+          lives += 1
+          score -= 1
+        if lives >= lives_allowed:
+            win = False    
         print('\nLives:', lives)
         print('Used letters:', ' '.join(used_letters))
         print('Word:', ' '.join(
@@ -153,11 +160,16 @@ def play_hangman(word, lives_allowed):
                 score -= 1
     else:
         print('You have already used that letter.')
+    if "_" not in [letter if word_dict[letter] else '_' for letter in word]:
+        win = True
+    else:
+        win = False 
+
 
     if win:
         print(f'\n {Fore.GREEN}Congratulations!{Style.RESET_ALL} You won!'
               f'The word was {word}')
-        if score>0:
+        if score >= 0:
           print(f'Congratulations, you win your score is: {score}')
         else:
           print(f'you lost! your score is {score}')
@@ -173,7 +185,7 @@ def play_hangman(word, lives_allowed):
 
     else:
         print(f'\n {Fore.RED}You lost!{Style.RESET_ALL} The word was {word}')
-        if score>0:
+        if score >= 0:
            print(f'Congratulations, you win your score is: {score}')
         else:
            print(f'you lost! your score is {score}')
