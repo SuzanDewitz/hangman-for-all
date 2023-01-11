@@ -148,20 +148,19 @@ def play_hangman(word, lives_allowed):
                 score += 1
             else:
                 lives += 1
-                score -= 1 
-        else:      
-            if all(word_dict.values()):
-                    win = True
-                    break
-            else:
-                lives += 1
+                print(HANGMAN_IMAGES[lives])
+                print(f"Lives Left: {lives_allowed - lives}")
                 score -= 1
     else:
-      print('You have already used that letter.')
+        print('You have already used that letter.')
 
     if win:
         print(f'\n {Fore.GREEN}Congratulations!{Style.RESET_ALL} You won!'
               f'The word was {word}')
+        if score>0:
+          print(f'Congratulations, you win your score is: {score}')
+        else:
+          print(f'you lost! your score is {score}')
         print(Fore.GREEN + '''
 
   _____
@@ -174,6 +173,10 @@ def play_hangman(word, lives_allowed):
 
     else:
         print(f'\n {Fore.RED}You lost!{Style.RESET_ALL} The word was {word}')
+        if score>0:
+           print(f'Congratulations, you win your score is: {score}')
+        else:
+           print(f'you lost! your score is {score}')
         print(Fore.RED + '''
   _____
  /     \\
@@ -190,14 +193,15 @@ word, lives_allowed = setup_game(words, max_lives)
 
 
 # Start the game
-while True:
-    play_hangman(word, lives_allowed)
-    play_again = input("Do you want to play again? (Y/N)\n").lower()
-    if play_again == 'y':
-        play_game()
-    else:
-        print("Thanks for playing! Goodbye.")
-
-
 def play_game():
     print("Welcome to Hangman")
+    while True:
+        play_hangman(word, lives_allowed)
+        play_again = input("Do you want to play again? (Y/N)\n").lower()
+        if play_again == 'n':
+            print("Thanks for playing! Goodbye.")
+            break
+
+
+play_game()
+
