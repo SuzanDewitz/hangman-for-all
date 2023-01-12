@@ -156,9 +156,8 @@ def play_hangman(word, lives_allowed):
             print('You have already used that letter.')
 
     if win:
-        print(Fore.GREEN + "Congratulations! " + Style.RESET_ALL + "You won! The word was {}".format(word))
-
-
+        print(Fore.GREEN + "Congratulations! " + Style.RESET_ALL +
+              "You won! The word was {}".format(word))
 
         print(Fore.GREEN + '''
   _____
@@ -206,7 +205,6 @@ while play_again == 'y':
 |          |
 |__________|''')
         time.sleep(0.5)
-
 
 
 def play_game():
