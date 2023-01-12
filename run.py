@@ -17,17 +17,20 @@ def hangman_logo():
     """
 
 
+string_with_slash = "slash"
+string_without_slash = string_with_slash.replace("/", " ")
+
 print(Fore.BLUE)
 print("""
 _    _
 | |  | |
 | |__| |  __ _  _ __    __ _  _ __ ___    __ _  _ __
-|  __  | / _` || '_ \\  / _` || '_ ` _ \\  / _` || '_ \\
+|  __  | {} _` || '_ \\  {} _` || '_ ` _ \\  {} _` || '_ \\
 | |  | || (_| || | | || (_| || | | | | || (_| || | | |
 |_|  |_| \\__,_||_| |_| \\__, ||_| |_| |_| \\__,_||_| |_|
-                         __/ | slash
-                        |___/
-""".strip())
+                         {}| | {}
+                        |___/ {}
+""".strip().format(" ", " ", " ", " ", " ", " "))
 print(Fore.RESET)
 
 
@@ -153,8 +156,10 @@ def play_hangman(word, lives_allowed):
             print('You have already used that letter.')
 
     if win:
-        print("""\n {Fore.GREEN}Congratulations!{Style.RESET_ALL} You won!
-        The word was {word}""")
+        print(Fore.GREEN + "Congratulations! " + Style.RESET_ALL + "You won! The word was {}".format(word))
+
+
+
         print(Fore.GREEN + '''
   _____
  /     \\
@@ -184,6 +189,7 @@ word, lives_allowed = setup_game(words, max_lives)
 # Start the game
 play_again = 'y'
 while play_again == 'y':
+    word, lives_allowed = setup_game(words, max_lives)
     play_hangman(word, lives_allowed)
     play_again = input("Do you want to play again? (Y/N)\n").lower()
     if play_again == 'n':
@@ -200,6 +206,7 @@ while play_again == 'y':
 |          |
 |__________|''')
         time.sleep(0.5)
+
 
 
 def play_game():
