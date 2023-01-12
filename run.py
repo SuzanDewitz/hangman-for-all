@@ -179,13 +179,24 @@ word, lives_allowed = setup_game(words, max_lives)
 
 
 # Start the game
-while True:
+play_again = 'y'
+while play_again == 'y':
     play_hangman(word, lives_allowed)
     play_again = input("Do you want to play again? (Y/N)\n").lower()
-    if play_again == 'y':
-        play_game() 
-    else:
+    if play_again == 'n':
         print("Thanks for playing! Goodbye.")
+        print(Fore.RED + '''
+   ____
+  |    |
+  |    o
+  |   /|\\
+  |    |
+  |   / \\
+ _|_
+|   |______
+|          |
+|__________|''')
+        time.sleep(0.5)
         
 
 
