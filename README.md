@@ -19,9 +19,11 @@
 # Table of Contents
 ## Home
 ## How to play
-## Design
-## Features and user experience 
- 
+## Future Features 
+## user experience 
+## User Goals
+## Design 
+## Flow chart  
 ## Tecnologies used
 ## Fixed and unfixed bugs
 ## Validation
@@ -43,7 +45,10 @@
  game by selecting a random word from a list and setting the number of lives allowed, the words variable is defined in words,py file
  provided.<br>
 <br>
-<br>
+<br> 
+
+![hangman home](https://user-images.githubusercontent.com/114075332/212319437-ab3a081c-1f6a-4728-a6a5-3b60ffadc342.jpg)
+
 <br>
 <br>
 
@@ -55,23 +60,21 @@
   * A message or counter: This displays the number of incorrect guesses remaining or message if player wins or lost.
   * A list of correctly guessed letters: This keeps track of the letters that have been correctly guessed and displays them to the player.
   * A list of incorrectly guessed letters: This keeps track of the letters that have been incorrectly guessed and displays them to the player.
-  
-![amiresposive](images/hangman%20home%20page.png)
+  <br>
+<br>
 
-
-
-
-# Features and user experience 
+# Future Features and user experience 
 <br>
 <br>
 <br>
 <br>
 
-## Features 
+## Existing Features 
 <br>
 <br>
+
 * The features in this specific hangman game include:
-  *  An ASCII art representation of the hangman game that is displayed as the player progresses through the game
+  * An ASCII art representation of the hangman game that is displayed as the player progresses through the game
   *  A limited number of lives (6) to guess the word
   *  The game uses words that have been imported from a separate file "words.py"
   *  The game checks if the user entered valid name with only Alphabets
@@ -81,28 +84,109 @@
   *  It also uses a function 'play_game()' but it's not implemented in the main part of the game.
   *  The game randomly selects a word from a list of words, and displays it to the user as a series of underscores (one for each letter in the word), with correctly guessed letters filled in.
 
+![hangman name rules](https://user-images.githubusercontent.com/114075332/212320036-cd67bf07-1a15-4ffe-bb08-fbcaa6ba01fa.jpg)
+
+
+<br>
+<br>
+
+![hangman lives](https://user-images.githubusercontent.com/114075332/212326958-86f55c66-5da8-4a2d-828d-56e261182d20.jpg)
+
+* A random word is selected from a pre-defined list of words.
+
+<br>
+<br>
+
+![hangman lives progress](https://user-images.githubusercontent.com/114075332/212326982-2105f56c-745b-479b-af21-f94cd948735e.jpg)
+
+ *  The game checks if the user entered valid name with only Alphabets
+ * If the letter is in the word, it is revealed to the user and they are prompted to guess another letter.
+<br>
+<br>
+
+![hangman won](https://user-images.githubusercontent.com/114075332/212325399-c61401bc-1d89-460d-9035-b73398c786b9.jpg)
+
+* If the user correctly guesses all the letters in the word, they win the game and a message is displayed.
+<br>
+<br>
+
+![hangman play no](https://user-images.githubusercontent.com/114075332/212325470-415e94f2-c845-432e-b361-5578516fef66.jpg)
+
+*  The user can choose to play again or end the game. They can only write "n" or "y" If the user enter the word "n" the game will end.
+<br>
+<br>
+
+![hangman guess lost](https://user-images.githubusercontent.com/114075332/212325507-5b3a5693-f2f4-4e76-b0c0-7cfc17c28ca7.jpg)
+
+*   The user continues to guess letters until they have correctly guessed all the letters in the word or they run out of lives.
+*   If the letter is not in the word, the user loses a life and an ASCII art image of the hangman is displayed to show the progress of the game.
+<br>
+<br>
+
+
+![hangman play again](https://user-images.githubusercontent.com/114075332/212326215-7a7bee4a-75ba-4cbd-b26f-62dda11ca500.jpg)
+
+*  The user can choose to play again or end the game."n" or "y" If user enter the letter  "y" the game will start.
+*  In this script, the user is prompted to enter the letters in uppercase.<br> The script then converts all the letters in the word and used letters<br> to uppercase using the .upper() method.<br> The script compares the user input letter with the uppercase version of the letters<br> in the word. This ensures that the user can enter the letter <br>in either uppercase or lowercase, and the <br>script will be able to correctly compare it to the letters in the word.<br>This way, the user can play the game without worrying about the letter case.
+
+
+<br>
+<br>
+
+
+
+# Future Features
+
+* Adding a save game feature, so that players can save their progress and come back to the game later.
+* Adding a timer to the game, where players have a certain amount of time to guess the word before the game ends.
+* Adding a multiplayer mode, where players can play against each other online.
+* Adding a difficulty increase feature, where the game gets harder as the player progress through the levels.
+* Allowing players to select the difficulty level of the game, with different levels having different word lists and different numbers of allowed lives.
+
 ## user experience 
 
 <br>
 <br>
-* In this specific hangman game, the user's goal is to guess the correct word by guessing letters one at a time. 
-* The user will have a certain number of lives (in this case, 6), and for each incorrect letter guessed, they will lose one life.
-* The user must guess the correct word before running out of lives in order to win the game.
-* The user's ultimate goal is to correctly guess the hidden word before the stick figure of the hanging man is fully drawn. 
+
+* The user experience of this hangman game script would involve the user being prompted to enter their name, <br> then being given the rules of the game. The user would then be presented with a <br>randomly selected word that they have to guess one letter at a time. <br>If the letter is in the word, it will be revealed, if not, the user loses a life.<br> The user has 6 lives in total. The script also uses ASCII art to show the progress of the hangman game. <br>Overall, the user experience is interactive and visually engaging,<br> as the script uses colors and images to enhance the gameplay experience.<br>
+<br>
+<br>
+
+# User Goals 
+* The user would also want to have fun and enjoy the interactive game play experience. 
+* The user can improve their vocabulary or spelling skills by playing the game.
+* The main goal for the user in this hangman game script would be to correctly guess the randomly selected word before running out of lives. 
+
+<br>
+<br>
+<br>
+<br>
+
+# Flow chart  
+
+* using flowcharts can be a very useful tool for understanding the structure and logic of a script, particularly for a complex or long code like this hangman game script.
+ A flowchart can help to clearly visualize the different steps involved in the game and how they are connected, making it easier to understand the overall logic of the script and identify any potential issues or areas for improvement.
+<br>
+<br>
+
+ ![hangman flow chart](https://user-images.githubusercontent.com/114075332/212324626-39dce7fe-5bff-46e5-a702-7610b486f19b.jpg)
+
+
+<br>
+<br>
+<br>
+<br>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
  
- 
- 
- 
- 
- 
- 
- ![amiresposive](assets/hangman-hangman%20flow%20chart.jpg)
-
-# Features and user experience 
- * 
 # Technologies Used
 * Languages
 * Python.
