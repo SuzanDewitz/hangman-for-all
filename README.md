@@ -42,7 +42,7 @@
 
  * The hangman_logo function displayed in white, using the Colorama library. The play_hangman function is the main 
  game loop and is responsible for managing the state of the game and updating the player's progress. The setup_game function sets up the
- game by selecting a random word from a list and setting the number of lives allowed, the words variable is defined in words,py file
+ game by selecting a random word from a list and setting the number of lives allowed, the words variable is defined in words.py file
  provided.<br>
 <br>
 <br> 
@@ -89,6 +89,7 @@
 <br>
 <br>
 <br>
+
 ![hangman name rules](https://user-images.githubusercontent.com/114075332/212320036-cd67bf07-1a15-4ffe-bb08-fbcaa6ba01fa.jpg)
 
 
@@ -154,7 +155,7 @@
 <br>
 <br>
 
-* The user experience of this hangman game script would involve the user being prompted to enter their name, <br> then being given the rules of the game. The user would then be presented with a <br>randomly selected word that they have to guess one letter at a time. <br>If the letter is in the word, it will be revealed, if not, the user loses a life.<br> The user has 6 lives in total. The script also uses ASCII art to show the progress of the hangman game. <br>Overall, the user experience is interactive and visually engaging,<br> as the script uses colors and images to enhance the gameplay experience.<br>
+* The user experience of this hangman game script would involve the user being prompted to enter their name,then being given the rules of the game.  <br>The user would then be presented with a randomly selected word that they have to guess one letter at a time. If the letter is in the word, <br> it will be revealed, if not, the user loses a life. The user has 6 lives in total. The script also uses ASCII art to show the progress of the hangman game. <br>Overall, the user experience is interactive and visually engaging,<br> as the script uses colors and images to enhance the gameplay experience.<br>
 <br>
 <br>
 
@@ -201,6 +202,7 @@
  #### for README
 +   git add README.md
 +   git commit -m "docs: add README.md file"
++   git push - To push all committed changes to the GitHub repository
 <br>
 <br>
 
@@ -208,8 +210,6 @@
 <br>
 
 +  This tool is created purely using Python language.
-<br>
-
 * This script is written in Python, which is a popular language used for creating games.
 * The script uses the "random" library to randomly select a word from a list of words. 
 * The script imports the "words" variable from the word.py file which contains the list of words. 
@@ -258,13 +258,16 @@ It also uses the input function to take inputs from the user and validate it.
 <br>
 <br>
 
+* The Bugs "E501 line too long" 
+    + This error occurs when i try to add "HANGMAN-FOR-AL" The line of code was too long and goes beyond the recommended limit of 79 characters thats why i change to "HNAGMAN"
+
 ![hangman-tolong erorr](https://user-images.githubusercontent.com/114075332/212372967-eec115d6-ca41-44c6-bc15-e68f966c9be7.jpg)
 
 <br>
 <br>
 
 ## unfixed bugs
-* There is unfixed bugs
+* There no unfixed bugs
 
 
 
@@ -277,7 +280,7 @@ It also uses the input function to take inputs from the user and validate it.
 
 ## Validation
 ### Python Linter Test 
-* Test result: No errors found. It showed no warnings or problems as in screenshot below.
+* Test result: No errors found. 
 * Since pep8 no longer working ,From slack team i have been told to validated Code Institute Python linter. Test result: No errors found. It showed no warnings or problems as in screenshot below.
 <br>
 <br>
@@ -335,20 +338,10 @@ It also uses the input function to take inputs from the user and validate it.
 <br>
 <br>
 <br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<
 
 
 
-###  Why I called hangman for all is my Son is under 10 years I approach him to play Hangman so that he can practice his spelling, Vocabulary, and letters. Since we are not native English speakers it helps for general knowledge too
+####  Why I called hangman for all is my Son is under 10 years I approach him to play Hangman so that he can practice his spelling, Vocabulary, and letters. Since we are not native English speakers it helps for general knowledge too any one can learning by playing!
 
 
 
