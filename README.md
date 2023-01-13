@@ -4,10 +4,13 @@
  is in the word, it is revealed, but if the letter is not in the word, the player loses a life. The player has six lives to guess the 
  word before the game is over.
  * Hangman is a great game for spelling and vocabulary knowledge to recognize how letters fit together to form English words as well as know how to spell words so that the user can guess the correct letters and vocabulary in order to correctly find the mystery words.
+  ![amiresposive](images/hangman%20ami%20responsive.png)
  <br>
  <br>
  <br>
-![hangman name rules](https://user-images.githubusercontent.com/114075332/212300420-e9e3b126-e962-4623-9615-625d731e17f4.jpg)
+
+ 
+
 
 
 
