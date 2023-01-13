@@ -341,7 +341,7 @@ It also uses the input function to take inputs from the user and validate it.
 
 
 
-####  Why I called hangman for all is my Son is under 10 years I approach him to play Hangman so that he can practice his spelling, Vocabulary, and letters. Since we are not native English speakers it helps for general knowledge too any one can learning by playing!
+####  Why I called hangman for all is my Son is under 10 years I approach him to play Hangman so that he can practice his spelling, Vocabulary, and letters. Since we are not native English speakers it helps for general knowledge too for any one at any age "learning by playing!"
 
 
 
