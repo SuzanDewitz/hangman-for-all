@@ -1,5 +1,5 @@
 # HANGMAN-For-ALL
-  *HANGMAN for aLL is a Python terminal game, which runs on the Code Institute mock terminal on Heroku.The play_game function prints out some introductory messages
+  * HANGMAN for aLL is a Python terminal game, which runs on the Code Institute mock terminal on Heroku.The play_game function prints out some introductory messages
  to the user and describes the rules of the game. The game is played by guessing letters in a secret word, one at a time. If a letter 
  is in the word, it is revealed, but if the letter is not in the word, the player loses a life. The player has six lives to guess the 
  word before the game is over.
@@ -60,7 +60,9 @@
   * A message or counter: This displays the number of incorrect guesses remaining or message if player wins or lost.
   * A list of correctly guessed letters: This keeps track of the letters that have been correctly guessed and displays them to the player.
   * A list of incorrectly guessed letters: This keeps track of the letters that have been incorrectly guessed and displays them to the player.
-  <br>
+<br>
+<br>
+<br>
 <br>
 
 # Future Features and user experience 
@@ -71,10 +73,10 @@
 
 ## Existing Features 
 <br>
-<br>
 
-* The features in this specific hangman game include:
-  * An ASCII art representation of the hangman game that is displayed as the player progresses through the game
+
+  *  The features in this specific hangman game include:
+  *  An ASCII art representation of the hangman game that is displayed as the player progresses through the game
   *  A limited number of lives (6) to guess the word
   *  The game uses words that have been imported from a separate file "words.py"
   *  The game checks if the user entered valid name with only Alphabets
@@ -83,7 +85,10 @@
   *  The game uses a loop to allow the user to keep playing the game until they win or lose.
   *  It also uses a function 'play_game()' but it's not implemented in the main part of the game.
   *  The game randomly selects a word from a list of words, and displays it to the user as a series of underscores (one for each letter in the word), with correctly guessed letters filled in.
-
+<br>
+<br>
+<br>
+<br>
 ![hangman name rules](https://user-images.githubusercontent.com/114075332/212320036-cd67bf07-1a15-4ffe-bb08-fbcaa6ba01fa.jpg)
 
 
@@ -92,7 +97,7 @@
 
 ![hangman lives](https://user-images.githubusercontent.com/114075332/212326958-86f55c66-5da8-4a2d-828d-56e261182d20.jpg)
 
-* A random word is selected from a pre-defined list of words.
+* A random word is selected from a separate file "words.py".
 
 <br>
 <br>
@@ -100,7 +105,7 @@
 ![hangman lives progress](https://user-images.githubusercontent.com/114075332/212326982-2105f56c-745b-479b-af21-f94cd948735e.jpg)
 
  *  The game checks if the user entered valid name with only Alphabets
- * If the letter is in the word, it is revealed to the user and they are prompted to guess another letter.
+ *  If the letter is in the word, it is revealed to the user and they are prompted to guess another letter.
 <br>
 <br>
 
@@ -120,6 +125,7 @@
 
 *   The user continues to guess letters until they have correctly guessed all the letters in the word or they run out of lives.
 *   If the letter is not in the word, the user loses a life and an ASCII art image of the hangman is displayed to show the progress of the game.
+
 <br>
 <br>
 
@@ -153,6 +159,9 @@
 <br>
 
 # User Goals 
+<br>
+<br> 
+
 * The user would also want to have fun and enjoy the interactive game play experience. 
 * The user can improve their vocabulary or spelling skills by playing the game.
 * The main goal for the user in this hangman game script would be to correctly guess the randomly selected word before running out of lives. 
@@ -164,7 +173,7 @@
 
 # Flow chart  
 
-* using flowcharts can be a very useful tool for understanding the structure and logic of a script, particularly for a complex or long code like this hangman game script.
+* using flowcharts it is very useful tool for understanding the structure and logic of a script, particularly for a complex or long code like this hangman game script.
  A flowchart can help to clearly visualize the different steps involved in the game and how they are connected, making it easier to understand the overall logic of the script and identify any potential issues or areas for improvement.
 <br>
 <br>
@@ -177,21 +186,22 @@
 <br>
 <br>
  
- 
- 
- 
- 
- 
- 
-
-
-
- 
 # Technologies Used
-* Languages
-* Python.
-* Libraries
-* random to select a random word.  word.py
+<br>
+<br>
+<br>
+
+* This script is written in Python, which is a popular language used for creating games.
+* The script uses the "random" library to randomly select a word from a list of words. 
+* The script imports the "words" variable from the word.py file which contains the list of words. 
+* The script also uses the "time" library to insert delay between certain actions, like between showing the rules of the game.
+* The script uses the "colorama" library to add color to the game's logo and ASCII art images.
+*  The script also uses the "random" library to randomly select a word from a list of words. 
+* The script defines several functions, including "hangman_logo()" which displays the game's logo, "play_game()" which welcomes the player to the game and explains the rules, and "play_hangman 
+    (word, lives_allowed)" which is the main game loop.
+* In the main loop, the script keeps track of the letters that have been used, and if the user correctly guesses all the letters of the word, they win the game. If the user runs out of lives, they lose the game.
+* It also uses the ASCII art images to display the progress of the game to the user which makes it more interactive.
+It also uses the input function to take inputs from the user and validate it.
 
 # credited 
 * Code Institute for the mock terminal for the deploy to a live site.
