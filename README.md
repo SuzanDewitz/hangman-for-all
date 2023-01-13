@@ -17,19 +17,19 @@
  <br>
 
 # Table of Contents
-## Home
-## How to play
-## Future Features 
-## user experience 
-## User Goals
-## Design 
-## Flow chart  
-## Tecnologies used
-## Fixed and unfixed bugs
-## Validation
-## Testing
-## Project creation and deployment
-## Credits
+### Home
+### How to play
+### Future Features 
+### User experience 
+### User Goals
+### Design 
+### Flow chart  
+### Tecnologies used
+### Fixed and unfixed bugs
+### Validation
+### Testing
+### Deployment
+### Credits
  <br>
  <br>
  <br>
@@ -191,6 +191,25 @@
 <br>
 <br>
 
+
+#### Libraries Used
+*  Git - For version control These commands were used for version control during project:
+
++   git add . - To add files before committing
++   git commit -m "write your text to mentioning changes" - To commit changes to the local repository
++   git push - To push all committed changes to the GitHub repository
+ #### for README
++   git add README.md
++   git commit -m "docs: add README.md file"
+<br>
+<br>
+
+### Languages Used 
+<br>
+
++  This tool is created purely using Python language.
+<br>
+
 * This script is written in Python, which is a popular language used for creating games.
 * The script uses the "random" library to randomly select a word from a list of words. 
 * The script imports the "words" variable from the word.py file which contains the list of words. 
@@ -199,9 +218,108 @@
 *  The script also uses the "random" library to randomly select a word from a list of words. 
 * The script defines several functions, including "hangman_logo()" which displays the game's logo, "play_game()" which welcomes the player to the game and explains the rules, and "play_hangman 
     (word, lives_allowed)" which is the main game loop.
-* In the main loop, the script keeps track of the letters that have been used, and if the user correctly guesses all the letters of the word, they win the game. If the user runs out of lives, they lose the game.
+* In the main loop, the script keeps track of the letters that have been used, and if the user correctly guesses all the letters of the word, they win the game. If the user runs out of lives, they 
+   lose the game.
 * It also uses the ASCII art images to display the progress of the game to the user which makes it more interactive.
 It also uses the input function to take inputs from the user and validate it.
+
+<br>
+<br>
+<br>
+<br>
+
+## Fixed and unfixed bugs
+### Fixed Bugs 
+
+<br>
+<br>
+
+*  Python Linter Test
+   * The Bugs "E501 line too long" 
+    + This error occurs when i try to add "HANGMAN-FOR-AL" The line of code was too long and goes beyond the recommended limit of 79 characters thats why i change to "HNAGMAN"
+    + There where more line to long 
+    + I fix the error, I split the long line into multiple shorter lines by:
+      * I Moved some of the code to the next line
+      * I used parentheses and backslashes to indicate line continuation
+      *  I used explicit line continuation with a backslash
+   *  "W291 trailing whitespace"
+   *  "W605 invalid escope sequence'\ ' "
+    + I used autopep8 tool it help me to automatically format the code to conform to the PEP8 style guide.
+    + To use autopep8 to fix "W291 trailing whitespace" error, I used following command:
+      1.  pip install pep8
+      2.  autopep8 --in-place --aggressive --aggressive run.py
+
+
+
+
+
+![hangman image erorr](https://user-images.githubusercontent.com/114075332/212372493-91255b4b-a812-4531-be0e-c3476540739a.jpg)
+
+<br>
+<br>
+
+![hangman-tolong erorr](https://user-images.githubusercontent.com/114075332/212372967-eec115d6-ca41-44c6-bc15-e68f966c9be7.jpg)
+
+<br>
+<br>
+
+## unfixed bugs
+* There is unfixed bugs
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+## Validation
+### Python Linter Test 
+* Test result: No errors found. It showed no warnings or problems as in screenshot below.
+* Since pep8 no longer working ,From slack team i have been told to validated Code Institute Python linter. Test result: No errors found. It showed no warnings or problems as in screenshot below.
+<br>
+<br>
+
+![hangman no erorr](https://user-images.githubusercontent.com/114075332/212372549-72b4be34-03bb-4283-af2b-dac1b0968d09.jpg)
+
+<br>
+<br>
+<br>
+<br>
+
+## Deployment
+#### Project Deployment on Heroku
+*    From the Heroku dashboard I clicked the create new app button, named the app and selected the Europe region and clicked 'Create app'
+*    Choose connect to GitHub account 
+*    Search for the repository you want to deploy. The name needs to match exactly in my case"Hangman-For-All" 
+*    Click 'Connect' 
+*    When the deployment is complete, go to the 'Settings' page to configure vars and buildpacks.
+*    Click 'Add' to fill out PORT and 8000 in he KEY / VALUE pair. This has been done.
+*    Scroll down to 'Buildpacks'. Click the 'Add Buildpack' button.
+*    From the pop up window, select 'python' and save changes.
+*    Repeat this again for'node.js' and save the changes. It is 'important' to make sure the buildpacks are in the correct order
+    The ordering is as follows:
+
+    1. `heroku/python`
+    2. `heroku/nodejs` with 'Python' first and 'node.js' second.<br> If they are not in the correct order, drag them into the right order.
+     
+   
+* The app is then built, and we get an app was successfully built message and a button to take me to the deployed link.
+* After the settings are done, navigate to the 'Deploy' tab at the top left side.
+* Select the option 'Github, 'connect to github' as the deployment method.
+* Search for the Github Repository in the search field (Hangman-For-All) and start 'Search'.
+* When the search is complete the link to github repository will appear, click 'connect'.
+* Once the repository is connected to Heroku
+* I used manually deploy by selecting a branch to deploy from and clicking 'Deploy Branch'.
+* Manual deployment allows the update the app whenever 'Deploy Branch' is clicked.
+* Once the build process completes take a few seconds, live app could be viewed by clicking button "View" below 'Your app was successfully deployed'.
++  Link generated: https://hangman-for-all.herokuapp.com/
+
+
+
+
 
 # credited 
 * Code Institute for the mock terminal for the deploy to a live site.
@@ -210,7 +328,7 @@ It also uses the input function to take inputs from the user and validate it.
 * Notepad ++ Column editor 
 * For Templates free lucidchart https://lucid.app/
 * Word Document with python https://youtu.be/WK-0VQsEfLA 
-  https://lucid.app/lucidchart/7af783b3-f411-40d5-9e8a-e2e60a4977a6/edit?invitationId=inv_84c2610d-ede7-44d3-8c53-350bb3ca8d4f
+* https://lucid.app/lucidchart/7af783b3-f411-40d5-9e8a-e2e60a4977a6/edit?invitationId=inv_84c2610d-ede7-44d3-8c53-350bb3ca8d4f
 
 <br>
 
@@ -226,37 +344,11 @@ It also uses the input function to take inputs from the user and validate it.
 
 <br>
 <br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-
-
-<br>
-<br>
-<br>
+<
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-###  Why I called hangman for all is my Son is under 10 years I approach him to play so that he can practice his spelling, Vocabulary, and letters. Since we are not native English speakers it helps for general knowledge
+###  Why I called hangman for all is my Son is under 10 years I approach him to play Hangman so that he can practice his spelling, Vocabulary, and letters. Since we are not native English speakers it helps for general knowledge too
 
 
 
