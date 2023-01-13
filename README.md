@@ -3,13 +3,16 @@
  to the user and describes the rules of the game. The game is played by guessing letters in a secret word, one at a time. If a letter 
  is in the word, it is revealed, but if the letter is not in the word, the player loses a life. The player has six lives to guess the 
  word before the game is over.
- * Hangman is a great game for spelling and vocabulary knowledge to recognize how letters fit together to form English words as well as know how to spell words so that the user can guess the correct letters and vocabulary in order to correctly find the mystery words.
+ * Hangman is a great game for spelling and vocabulary knowledge to recognize how letters fit together.The hangman game is a word guessing game that is typically used to teach or reinforce spelling and vocabulary skills. In the game, players are presented with a word or phrase and must guess the letters that make up that word or phrase before a "hangman" is fully drawn.
+ <br>
+ <br>
   ![amiresposive](images/hangman%20ami%20responsive.png)
  <br>
  <br>
  <br>
 
- 
+
+
 
 
 
@@ -55,8 +58,14 @@ Hangman-For-All
  ![amiresposive](assets/hangman%20home%20page.jpg)
 
 # Design
-
-
+## The design of a hangman game includes a few key elements:
+  * A word or phrase to be guessed: This is the main focus of the game, displayed underscores, with each space representing a letter in the word or phrase.
+  * A "hangman" image: This image is gradually drawn as players make incorrect guesses, with the final image being a complete picture of a person being "hanged."
+  * A message or counter: This displays the number of incorrect guesses remaining or message if player wins or lost.
+  * A list of correctly guessed letters: This keeps track of the letters that have been correctly guessed and displays them to the player.
+  * A list of incorrectly guessed letters: This keeps track of the letters that have been incorrectly guessed and displays them to the player.
+  
+![amiresposive](images/hangman%20home%20page.png)
 
 
 
@@ -80,6 +89,7 @@ Hangman-For-All
   *  The game uses a loop to allow the user to keep playing the game until they win or lose.
   *  It also uses a function 'play_game()' but it's not implemented in the main part of the game.
   *  The game randomly selects a word from a list of words, and displays it to the user as a series of underscores (one for each letter in the word), with correctly guessed letters filled in.
+
 ## user experience 
 
 <br>
