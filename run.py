@@ -20,7 +20,7 @@ def hangman_logo():
 string_with_slash = "slash"
 string_without_slash = string_with_slash.replace("/", " ")
 
-print(Fore.BLUE)
+print(Fore.WHITE)
 print("""
 _    _
 | |  | |
