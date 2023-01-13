@@ -7,8 +7,12 @@
  <br>
  <br>
  <br>
+![hangman name rules](https://user-images.githubusercontent.com/114075332/212300420-e9e3b126-e962-4623-9615-625d731e17f4.jpg)
 
-  ![amiresposive](assets/hangman%20ami%20responsive.jpg)
+
+
+  ![amiresposive](images/hangman%20image%20removed%20erorr.jpg)
+
  <br>
  <br>
  <br>
