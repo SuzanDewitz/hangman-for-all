@@ -7,7 +7,8 @@
  <br>
  <br>
 
-![amiresposive](images/hangman%20ami%20responsive.png)
+![hangman ami responsive](https://user-images.githubusercontent.com/114075332/212318531-b18fbf67-d524-4174-afd6-0764647c04dd.jpg)
+
 
  <br>
  <br>
@@ -46,7 +47,6 @@
 <br>
 <br>
 
- ![home](assets/hangman%20home%20page.jpg)
 
 # Design
 ## The design of a hangman game includes a few key elements:
