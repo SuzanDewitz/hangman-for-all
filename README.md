@@ -6,19 +6,11 @@
  * Hangman is a great game for spelling and vocabulary knowledge to recognize how letters fit together.The hangman game is a word guessing game that is typically used to teach or reinforce spelling and vocabulary skills. In the game, players are presented with a word or phrase and must guess the letters that make up that word or phrase before a "hangman" is fully drawn.
  <br>
  <br>
-  ![amiresposive](images/hangman%20ami%20responsive.png)
+
+![amiresposive](images/hangman%20ami%20responsive.png)
+
  <br>
  <br>
- <br>
-
-
-
-
-
-
-
-  ![amiresposive](images/hangman%20image%20removed%20erorr.jpg)
-
  <br>
  <br>
  <br>
@@ -39,15 +31,13 @@
  <br>
  <br>
 
-
-Hangman-For-All
 # Home
 ## How to play
   * This is a Python script that implements a simple game of Hangman, where the player has to guess a word one letter at a time.<br> 
     If the player guesses a letter that is in the word, it will be revealed. If the player guesses a letter that is not in the word,<br>
     they lose a life. The player has 6 lives in total.<br>
 
- * The hangman_logo function displayed in blue, using the Colorama library. The play_hangman function is the main 
+ * The hangman_logo function displayed in white, using the Colorama library. The play_hangman function is the main 
  game loop and is responsible for managing the state of the game and updating the player's progress. The setup_game function sets up the
  game by selecting a random word from a list and setting the number of lives allowed, the words variable is defined in words,py file
  provided.<br>
@@ -55,7 +45,8 @@ Hangman-For-All
 <br>
 <br>
 <br>
- ![amiresposive](assets/hangman%20home%20page.jpg)
+
+ ![home](assets/hangman%20home%20page.jpg)
 
 # Design
 ## The design of a hangman game includes a few key elements:
