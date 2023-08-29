@@ -94,7 +94,6 @@ words = [
 "unwieldy",
 "detailed",
 "knowledge",
-"program",
 "agreement",
 "limit",
 "examine",
