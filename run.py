@@ -135,6 +135,7 @@ def play_hangman(word, lives_allowed):
     lives = 0
     win = False
     print('\n' + HANGMAN_IMAGES[lives])
+    score = 0
     while lives < lives_allowed:
         print('\nLives:', lives)
         print('Used letters:', ' '.join(used_letters))
@@ -146,6 +147,7 @@ def play_hangman(word, lives_allowed):
             used_letters.add(user_letter)
             if user_letter in word_letters:
                 word_dict[user_letter] = True
+                score += 1  # Increment score for each correct guess
                 if all(word_dict.values()):
                     win = True
                     break
